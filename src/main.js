@@ -1,13 +1,12 @@
 
 
 import './styles/main.css'
-import {button} from "/src/styles/main.module.css";
-import jsLogo from "/src/assets/javascript.svg";
-import img from "../src/assets/8b.jpg";
+import {button} from "@/styles/main.module.css";
+import jsLogo from "@/assets/javascript.svg";
+import img from "@/assets/8b.jpg";
 
 
 const app = document.querySelector('#app');
-
 
 const template = /* html */`
   <figure>

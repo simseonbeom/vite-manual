@@ -1,7 +1,7 @@
 
 
 import { defineConfig } from "vite";
-
+import { resolve } from "node:path";
 
 
 const viteConfig = defineConfig({
@@ -18,6 +18,9 @@ const viteConfig = defineConfig({
     modules:{
       generateScopedName: "[name]__[local]___[hash:base64:5]",
     }
+  },
+  resolve:{
+    alias:{'@':resolve(__dirname,'src')}
   }
 })
 
